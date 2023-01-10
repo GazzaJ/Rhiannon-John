@@ -8,11 +8,12 @@ module.exports = {
       lg: '1020px',
       xl: '1440px',
     },
-    colors: {
-      'darkGray': '#37474f',
-      'pink': '#ff4f7f'
+    extend: {
+      colors: {
+        'darkGray': '#37474f',
+        'coolPink': '#ff4f7f'
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
