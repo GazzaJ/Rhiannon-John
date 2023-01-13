@@ -13,6 +13,10 @@ module.exports = {
         'darkGray': '#37474f',
         'coolPink': '#ff4f7f'
       },
+      fontFamily: {
+        sans: ['Yeseva One', 'sans-serif'],
+        mono: ['Ubuntu']
+      },
     },
   },
   plugins: [],
