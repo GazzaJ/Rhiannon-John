@@ -1,12 +1,8 @@
-const btn = document.getElementById('menu-btn');
-const menu = document.getElementById('menu');
+const imgs = document.querySelectorAll('.image');
+console.log(imgs);
+imgs.forEach((img) => img.addEventListener('click', openModal))
+//Display modal on clicking image
 
-// Hamburger Button Listner.
-btn.addEventListener('click', navToggle);
-
-// Display the Mobile Menu items
-function navToggle() {
-    btn.classList.toggle('open');
-    menu.classList.toggle('flex');
-    menu.classList.toggle('hidden');
+function openModal() {
+    console.log('Boom!');
 }
