@@ -6,6 +6,7 @@ let imgSrc;
 imgs.forEach((img) => {
     img.addEventListener('click', (e) => {
         imgSrc = e.target.src;
+        imgModal(imgSrc);
     });
 });
 
@@ -13,12 +14,20 @@ imgs.forEach((img) => {
 let imgModal = (src) => {
     const modal = document.createElement("div");
     modal.setAttribute("class", "modal");
-
     // Add the modal to the main section / parent element
     document.querySelector(".main").append(modal);
 
     // Add image to the modal
     const newImg = document.createElement("img");
     newImg.setAttribute("src", src);
-    modal.append(newImg)
+
+    // Adding the Close Button
+    const closeBtn = document.createElement("i");
+    closeBtn.setAttribute("class", "fa-solid fa-circle-xmark close");
+
+    // Close Modal Function
+    closeBtn.onclick = () => {
+        modal.remove();
+    };
+    modal.append(newImg, closeBtn);
 };

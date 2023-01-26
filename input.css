@@ -11,17 +11,51 @@
   }
 }
 
-@layer components {
-  .modal {
+.modal {
+    width: 100%;
+    height: 100%;
     position: fixed;
     top: 0;
-    @apply container w-full h-screen flex justify-center items-center darkGray;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin-top: -1px;
+    animation: zoom 0.3s ease-in-out;
+}
 
-  .modal img {
-    width: 60%;
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.modal img {
+    width: 50%;
     object-fit: cover;
-  }
+}
+
+.close {
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    z-index: 40;
+}
+
+.close:hover {
+    color: rgb(255, 255, 255);
+}
+
+.test {
+  color: white;
 }
 
 /* HAMBURGER MENU */

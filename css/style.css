@@ -572,6 +572,10 @@ p {
   z-index: 20;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -618,6 +622,10 @@ p {
   height: 100%;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .max-h-screen {
   max-height: 100vh;
 }
@@ -628,6 +636,10 @@ p {
 
 .w-full {
   width: 100%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-7xl {
@@ -818,6 +830,55 @@ p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 6;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.733);
+  margin-top: -1px;
+  animation: zoom 0.3s ease-in-out;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.close {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  z-index: 40;
+}
+
+.close:hover {
+  color: rgb(255, 255, 255);
+}
+
+.test {
+  color: white;
 }
 
 /* HAMBURGER MENU */
