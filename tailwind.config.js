@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         'darkGray': '#37474f',
+        'medGray': '#bebcc0',
         'coolPink': '#ff4f7f'
       },
       fontFamily: {
