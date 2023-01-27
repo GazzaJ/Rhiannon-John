@@ -13,7 +13,7 @@ imgs.forEach((img) => {
 //Display modal on clicking image
 let imgModal = (src) => {
     const modal = document.createElement("div");
-    modal.setAttribute("class", "modal");
+    modal.setAttribute("class", "modal flex justify-center items-center");
     // Add the modal to the main section / parent element
     document.querySelector(".main").append(modal);
 
