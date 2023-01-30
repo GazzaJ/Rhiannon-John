@@ -730,6 +730,11 @@ p {
   background-color: rgb(55 71 79 / var(--tw-bg-opacity));
 }
 
+.bg-medGray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 188 192 / var(--tw-bg-opacity));
+}
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -748,11 +753,6 @@ p {
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-medGray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(190 188 192 / var(--tw-bg-opacity));
 }
 
 .p-6 {
@@ -829,14 +829,9 @@ p {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-300 {
+.text-gray-800 {
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
@@ -844,9 +839,9 @@ p {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-gray-800 {
+.text-gray-300 {
   --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .opacity-90 {
@@ -968,6 +963,10 @@ p {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
 }
 
 .hover\:text-coolPink:hover {
