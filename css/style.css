@@ -610,6 +610,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .ml-10 {
   margin-left: 2.5rem;
 }
@@ -620,14 +624,6 @@ p {
 
 .mb-6 {
   margin-bottom: 1.5rem;
-}
-
-.-mt-10 {
-  margin-top: -2.5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .block {
@@ -815,12 +811,12 @@ p {
   text-align: center;
 }
 
-.font-sans {
-  font-family: Yeseva One, sans-serif;
-}
-
 .font-mono {
   font-family: Ubuntu;
+}
+
+.font-sans {
+  font-family: Yeseva One, sans-serif;
 }
 
 .text-sm {
