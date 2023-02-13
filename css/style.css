@@ -749,6 +749,10 @@ p {
   border-radius: 0.75rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
