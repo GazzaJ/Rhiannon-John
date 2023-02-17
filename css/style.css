@@ -553,6 +553,10 @@ p {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -562,6 +566,10 @@ p {
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .z-30 {
@@ -658,6 +666,10 @@ p {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .max-h-screen {
   max-height: 100vh;
 }
@@ -733,10 +745,6 @@ p {
   align-self: flex-end;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .text-clip {
   text-overflow: clip;
 }
@@ -776,24 +784,14 @@ p {
   background-color: rgb(55 71 79 / var(--tw-bg-opacity));
 }
 
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
 .bg-medGray {
   --tw-bg-opacity: 1;
   background-color: rgb(190 188 192 / var(--tw-bg-opacity));
 }
 
-.bg-gray-500 {
+.bg-gray-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
-.bg-purple-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
