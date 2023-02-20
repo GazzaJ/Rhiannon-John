@@ -1,4 +1,5 @@
 const imgs = document.querySelectorAll('.image');
+const btt = document.getElementById('btt');
 let imgSrc;
 
 // Getting the source of the image
@@ -31,3 +32,21 @@ let imgModal = (src) => {
     };
     modal.append(newImg, closeBtn);
 };
+
+//Back to Top Button
+// Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+window.onscroll = function () { scrollFunction };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btt.style.display = "block"
+    } else {
+        btt.style.display = "none"
+    }
+}
+
+//Scroll to the top when the user clicks the button
+backToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
