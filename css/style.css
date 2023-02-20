@@ -572,6 +572,10 @@ p {
   bottom: 0px;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
 .z-30 {
   z-index: 30;
 }
@@ -666,12 +670,8 @@ p {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.max-h-screen {
-  max-height: 100vh;
+.h-10 {
+  height: 2.5rem;
 }
 
 .min-h-screen {
@@ -684,6 +684,14 @@ p {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-7xl {
@@ -792,6 +800,11 @@ p {
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-coolPink {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 79 127 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -908,6 +921,11 @@ p {
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-darkGray {
+  --tw-text-opacity: 1;
+  color: rgb(55 71 79 / var(--tw-text-opacity));
 }
 
 .opacity-90 {
@@ -1041,6 +1059,15 @@ p {
   cursor: pointer;
 }
 
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
+}
+
+.hover\:border-darkGray:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 71 79 / var(--tw-border-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -1048,6 +1075,11 @@ p {
 .hover\:text-coolPink:hover {
   --tw-text-opacity: 1;
   color: rgb(255 79 127 / var(--tw-text-opacity));
+}
+
+.hover\:text-darkGray:hover {
+  --tw-text-opacity: 1;
+  color: rgb(55 71 79 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
