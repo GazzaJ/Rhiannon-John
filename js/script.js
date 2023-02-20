@@ -35,9 +35,9 @@ let imgModal = (src) => {
 
 //Back to Top Button
 // Adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-window.onscroll = function () { scrollFunction };
+window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
+scrollFunction = () => {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         btt.style.display = "block"
     } else {
