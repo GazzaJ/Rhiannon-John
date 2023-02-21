@@ -420,7 +420,7 @@ video {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Yeseva One';
+  font-family: 'Carter One';
 }
 
 p {
@@ -612,6 +612,11 @@ p {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-6 {
@@ -849,12 +854,12 @@ p {
   text-align: center;
 }
 
-.font-mono {
-  font-family: Ubuntu;
-}
-
 .font-sans {
   font-family: Carter One, sans-serif;
+}
+
+.font-mono {
+  font-family: Ubuntu;
 }
 
 .text-sm {
@@ -924,13 +929,6 @@ p {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.line-clamp-6 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
 }
 
 /* ----- Image Modal ----- */
@@ -1049,6 +1047,10 @@ p {
 
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .md\:row-span-2 {
