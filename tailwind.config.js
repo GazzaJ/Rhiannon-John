@@ -15,7 +15,7 @@ module.exports = {
         'coolPink': '#ff4f7f'
       },
       fontFamily: {
-        sans: ['Yeseva One', 'sans-serif'],
+        sans: ['Carter One', 'sans-serif'],
         mono: ['Ubuntu']
       },
     },
