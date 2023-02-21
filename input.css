@@ -56,11 +56,11 @@
   color: white;
 }
 
-/*  */
+/* Back to top button */
 #btt {
   display: none;
   position: sticky;
   bottom: 20px;
-  right: 10px;
+  left: 1420px;
   z-index: 99;
 }

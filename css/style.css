@@ -614,6 +614,11 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -912,6 +917,10 @@ p {
   opacity: 0.9;
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -980,14 +989,30 @@ p {
   color: white;
 }
 
-/*  */
+/* Back to top button */
 
 #btt {
   display: none;
   position: sticky;
   bottom: 20px;
-  right: 10px;
+  left: 1420px;
   z-index: 99;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.hover\:animate-bounce:hover {
+  animation: bounce 1s infinite;
 }
 
 .hover\:cursor-pointer:hover {
@@ -1015,6 +1040,10 @@ p {
 .hover\:text-darkGray:hover {
   --tw-text-opacity: 1;
   color: rgb(55 71 79 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 .focus\:outline-none:focus {
