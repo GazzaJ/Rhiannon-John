@@ -614,11 +614,6 @@ p {
   margin-bottom: 1.5rem;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -736,10 +731,6 @@ p {
 
 .self-end {
   align-self: flex-end;
-}
-
-.text-clip {
-  text-overflow: clip;
 }
 
 .rounded-lg {
