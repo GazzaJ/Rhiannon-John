@@ -52,6 +52,12 @@
     color: rgb(255, 255, 255);
 }
 
+.responsive {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Back to top button */
 #btt {
   display: none;

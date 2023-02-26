@@ -967,6 +967,13 @@ p {
   color: rgb(255, 255, 255);
 }
 
+.responsive {
+  max-width: 90%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 /* Back to top button */
 
 #btt {

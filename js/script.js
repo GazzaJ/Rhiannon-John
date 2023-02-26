@@ -21,6 +21,7 @@ let imgModal = (src) => {
     // Add image to the modal
     const newImg = document.createElement("img");
     newImg.setAttribute("src", src);
+    newImg.setAttribute("class", "responsive")
 
     // Adding the Close Button
     const closeBtn = document.createElement("i");
