@@ -604,6 +604,10 @@ p {
   margin: auto;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -645,6 +649,10 @@ p {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -770,6 +778,11 @@ p {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-coolPink {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 79 127 / var(--tw-border-opacity));
+}
+
 .bg-darkGray {
   --tw-bg-opacity: 1;
   background-color: rgb(55 71 79 / var(--tw-bg-opacity));
@@ -831,6 +844,11 @@ p {
   padding-right: 0.25rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
@@ -841,6 +859,18 @@ p {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
