@@ -61,9 +61,6 @@
 /* Back to top button */
 #btt {
   display: none;
-  position: sticky;
-  bottom: 20px;
-  left: 1420px;
   z-index: 99;
 }
 
@@ -111,5 +108,14 @@ transform: rotate(45deg) translateY(6px) translateX(6px);
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+@media(max-width: 576px) {
+  .hero {
+  background-image: url('../images/skulls/skull-9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  }
 }
 

@@ -568,6 +568,14 @@ p {
   left: 0px;
 }
 
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -627,20 +635,16 @@ p {
   margin-bottom: auto;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .mb-3 {
   margin-bottom: 0.75rem;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mt-5 {
@@ -671,10 +675,6 @@ p {
   height: 100%;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .max-h-screen {
   max-height: 100vh;
 }
@@ -683,21 +683,12 @@ p {
   min-height: 100vh;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
-.min-h-fit {
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-}
-
 .w-full {
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-7xl {
@@ -757,12 +748,12 @@ p {
   align-self: flex-end;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-xl {
@@ -811,16 +802,6 @@ p {
   background-color: rgb(255 79 127 / var(--tw-bg-opacity));
 }
 
-.bg-medGray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(190 188 192 / var(--tw-bg-opacity));
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
@@ -852,14 +833,14 @@ p {
   padding-bottom: 0.75rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pt-24 {
@@ -964,11 +945,6 @@ p {
   outline-style: solid;
 }
 
-.grayscale {
-  --tw-grayscale: grayscale(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -1027,9 +1003,6 @@ p {
 
 #btt {
   display: none;
-  position: sticky;
-  bottom: 20px;
-  left: 1420px;
   z-index: 99;
 }
 
@@ -1078,6 +1051,15 @@ p {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+@media(max-width: 576px) {
+  .hero {
+    background-image: url('../images/skulls/skull-9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
 }
 
 .hover\:scale-105:hover {
@@ -1138,29 +1120,7 @@ p {
   outline-offset: 2px;
 }
 
-@media (min-width: 480px) {
-  .sm\:bottom-0 {
-    bottom: 0px;
-  }
-
-  .sm\:left-0 {
-    left: 0px;
-  }
-
-  .sm\:min-h-full {
-    min-height: 100%;
-  }
-}
-
 @media (min-width: 768px) {
-  .md\:bottom-0 {
-    bottom: 0px;
-  }
-
-  .md\:left-0 {
-    left: 0px;
-  }
-
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1185,8 +1145,9 @@ p {
     grid-row: span 2 / span 2;
   }
 
-  .md\:ml-10 {
-    margin-left: 2.5rem;
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:block {
@@ -1205,12 +1166,8 @@ p {
     display: none;
   }
 
-  .md\:min-h-full {
-    min-height: 100%;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
+  .md\:w-4\/5 {
+    width: 80%;
   }
 
   .md\:grid-cols-4 {
